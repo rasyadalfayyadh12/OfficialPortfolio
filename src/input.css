@@ -39,3 +39,23 @@ body {
 .scroll-visible {
     @apply opacity-100 translate-y-0;
 }
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 0.75rem;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    border-radius: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #acc5d1;
+    border-radius: 8px;
+    border: 2px solid #f1f5f9;
+    transition: all 0.3s ease;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #688d9b; 
+    transition: all 0.3s ease;
+}
