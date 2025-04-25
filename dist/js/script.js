@@ -46,3 +46,10 @@ document.addEventListener("DOMContentLoaded", function() {
     elements.forEach(el => observer.observe(el));
 });
 
+
+
+function toggleIcon() {
+    const icon = document.getElementById('toggle-icon');
+    icon.innerHTML = document.getElementById('dark-toggle').checked ? '☀️' : '🌑';
+  }
+
